@@ -41,6 +41,7 @@ Progress: [ 98%] [████████████████████�
 
 ┌──(root㉿kali)-[/home/sysharmonics]
 └─# echo "Harmonizing networks one byte at a time."
+Harmonizing networks one byte at a time.
 
 ┌──(root㉿kali)-[/home/sysharmonics]
 └─# cat sysharmonics.txt
