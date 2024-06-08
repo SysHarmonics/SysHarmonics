@@ -9,8 +9,12 @@ echo "Before update:"
 grep "Linux kali" README.md
 
 # Update the README
-sed -i "s/# Linux kali .* #.*/# Linux kali 6.6.15-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.6.15-2kali1 (${DATE}) x86_64/" README.md
+sed -i.bak "s/# Linux kali .* #.*/# Linux kali 6.6.15-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.6.15-2kali1 (${DATE}) x86_64/" README.md
 
 # Show the lines after replacement
 echo "After update:"
 grep "Linux kali" README.md
+
+# Show the backup file created by sed
+echo "Backup file created by sed:"
+cat README.md.bak
