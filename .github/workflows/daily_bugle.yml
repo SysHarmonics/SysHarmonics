@@ -6,21 +6,30 @@ on:
   workflow_dispatch:
 
 jobs:
-  daily_bugle:
+  update-readme:
     runs-on: ubuntu-latest
 
     steps:
-    - name: List files in actions/checkout
-      run: ls -R .github/actions/checkout
-
     - name: Checkout Repository
-      uses: ./.github/actions/checkout
+      uses: actions/checkout@v2
+
+    - name: List files in root
+      run: ls -R
+
+    - name: List files in .github
+      run: ls -R .github
+
+    - name: List files in .github/actions
+      run: ls -R .github/actions
+
+    - name: List files in .github/actions/checkout
+      run: ls -R .github/actions/checkout
 
     - name: Run update script
       run: ./src/daily_bugle.sh
 
     - name: Commit changes
-      env:
+      env: 
         ACTIONS_WORKFLOW: ${{ secrets.ACTIONS_WORKFLOW }}
       run: |
         git config --global user.name 'github-actions'
