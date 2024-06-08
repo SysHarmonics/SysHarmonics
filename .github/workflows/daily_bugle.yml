@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: List files in actions/checkout
+      run: ls -R .github/actions/checkout
+
     - name: Checkout Repository
       uses: ./.github/actions/checkout
 
