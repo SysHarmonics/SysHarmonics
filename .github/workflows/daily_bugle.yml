@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-readme:
+  daily_bugle:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,7 +17,7 @@ jobs:
       run: ./src/daily_bugle.sh
 
     - name: Commit changes
-      env: 
+      env:
         ACTIONS_WORKFLOW: ${{ secrets.ACTIONS_WORKFLOW }}
       run: |
         git config --global user.name 'github-actions'
