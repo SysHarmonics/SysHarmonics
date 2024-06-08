@@ -8,8 +8,8 @@ echo "Updating README with date: ${DATE}"
 echo "Before update:"
 grep "Linux kali" README.md
 
-# Update the README
-sed -i.bak "s/# Linux kali .* #.*/# Linux kali 6.6.15-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.6.15-2kali1 (${DATE}) x86_64/" README.md
+# Update the README with a simpler pattern
+sed -i.bak "s/\(2024-05-17\)/(${DATE})/" README.md
 
 # Show the lines after replacement
 echo "After update:"
