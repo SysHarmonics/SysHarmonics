@@ -1,7 +1,7 @@
 ![banner](/images/SysHarmonics_Banner.gif)
 
 ```bash
-Linux kali 6.6.15-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.6.15-2kali1 (2024-06-12) x86_64
+Linux kali 6.6.15-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.6.15-2kali1 (2024-06-13) x86_64
 
 The programs included with the Kali GNU/Linux system are free software;
 the exact distribution terms for each program are described in the
