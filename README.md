@@ -46,7 +46,7 @@ Harmonizing networks one byte at a time.
 ┌──(root㉿kali)-[/home/sysharmonics]
 └─# cat sysharmonics.txt
 Job Title: Desktop Support Technician | Freelance Web Dev
-Mission: Fortifying networks and securing systems
+Certifications: CompTIA Security+
 
 ┌──(root㉿kali)-[/home/sysharmonics]
 └─# cat arsenal.txt
